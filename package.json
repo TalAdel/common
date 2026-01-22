@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rm -rf dist",
     "build": "npm run clean && tsc",
-    "pub": "npm run build && npm version patch && npm publish && git push && git push --tags"
+    "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish && git push && git push --tags"
   },
   "keywords": [],
   "author": "",
