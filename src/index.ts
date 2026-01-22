@@ -21,6 +21,7 @@ export * from './errors/custom-error';
 
 export * from './middlewares/auth-req';
 export * from './middlewares/error-handler';
+export * from './middlewares/validate-request';
 
 
 export * from './correlation/middleware';
