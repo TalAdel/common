@@ -1,13 +1,13 @@
 {
   "name": "@taladel/common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "common utilities for microservices",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
-"scripts": {
+  "scripts": {
     "clean": "del-cli ./build/*",
     "build": "npm run clean && tsc",
     "pub": "git add . && git commit -m \"Updates\" && npm version patch && npm run build && npm publish"
