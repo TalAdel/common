@@ -1,7 +1,7 @@
 import {Request, Response, NextFunction } from "express";
 import { CustomError } from "../errors/custom-error";
 
-export const errorHandler = (
+const errorHandler = (
     err: Error,
     _req: Request,
     res: Response,
@@ -15,3 +15,4 @@ export const errorHandler = (
     console.error(err.stack);    
     res.status(500).json({ message: err.message || 'Internal Server Error' });
 };
+export { errorHandler };
