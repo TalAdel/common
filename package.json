@@ -1,0 +1,35 @@
+{
+  "name": "@taladel/common-ms",
+  "version": "1.0.4",
+  "description": "common utilities for microservices",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "del-cli ./build/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm add .&& npm commit -m \"chore: publish\" &&npm version build patch --no-git-tag-version && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "peerDependencies": {
+    "express": "^5.2.1"
+  },
+  "dependencies": {
+    "cls-rtracer": "^2.6.3",
+    "jsonwebtoken": "^9.0.3",
+    "bcryptjs": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.0.6",
+    "@types/bcryptjs": "^2.4.6",
+    "typescript": "^5.9.3"
+  }
+}
