@@ -8,6 +8,5 @@ export class CustomError extends Error{
         this.message = message;
 
         Object.setPrototypeOf(this, CustomError.prototype);
-        Error.captureStackTrace(this, this.constructor);
     }
 }
