@@ -4,6 +4,7 @@ import { CustomError } from '../errors/custom-error';
 export interface jwtPayload {
     userId?: string;
     email?: string;
+    name?: string;
     
 }
 
