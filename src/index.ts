@@ -26,3 +26,10 @@ export * from './middlewares/validate-request';
 
 export * from './correlation/middleware';
 export * from './correlation/types';    
+
+export * from './events/subjects';
+export * from './events/base-listener';
+export * from './events/base-publisher';
+export * from './events/base-event';
+
+export * from './events/auth/user-created-event';

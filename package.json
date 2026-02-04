@@ -23,7 +23,8 @@
     "bcryptjs": "^3.0.3",
     "cls-rtracer": "^2.6.3",
     "express-validator": "^7.3.1",
-    "jsonwebtoken": "^9.0.3"
+    "jsonwebtoken": "^9.0.3",
+    "kafkajs": "^2.2.4"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
