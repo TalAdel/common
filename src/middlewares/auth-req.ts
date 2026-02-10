@@ -32,4 +32,4 @@ const authenticate = async (
     next();
 };
 
-export default authenticate;
+export { authenticate as authRequest };
