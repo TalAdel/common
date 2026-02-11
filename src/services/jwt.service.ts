@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 import { CustomError } from '../errors/custom-error';
 
-export interface jwtPayload {
+export interface JwtPayload {
     userId?: string;
     email?: string;
     name?: string;
@@ -9,7 +9,7 @@ export interface jwtPayload {
 }
 
 export default class JwtService{
-    static generateToken(payload: jwtPayload): string {
+    static generateToken(payload: JwtPayload): string {
         return jwt.sign(
             payload, 
             process.env.JWT_SECRET!, 
@@ -20,11 +20,11 @@ export default class JwtService{
         );
     }
 
-    static verifyToken(token: string): jwtPayload {
+    static verifyToken(token: string): JwtPayload {
         try {
         return jwt.verify(token, process.env.JWT_SECRET!, {
                     algorithms: ['HS256']
-            }) as jwtPayload;
+            }) as JwtPayload;
         } catch (error) {
             throw new CustomError(401, 'invalid or expired token');
         }

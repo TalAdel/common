@@ -1,7 +1,6 @@
-import JwtService, { jwtPayload } from "../services/jwt.service";
+import JwtService, { JwtPayload } from "../services/jwt.service";
 import { Request, Response, NextFunction } from "express";
 import { CustomError } from "../errors/custom-error";
-import { JwtPayload } from "jsonwebtoken";
 
 declare global {
     namespace Express {
